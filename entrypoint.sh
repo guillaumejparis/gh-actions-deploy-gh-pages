@@ -10,7 +10,7 @@ echo '=================== Build site ==================='
 yarn
 yarn build
 echo '=================== Publish to GitHub Pages ==================='
-cd _build
+cd ${BUILD_FOLDER}
 remote_repo="git@github.com:${GITHUB_DEPLOY_REPOSITORY}.git" && \
 remote_branch=${GITHUB_DEPLOY_BRANCH} && \
 echo "Pushing Build to $remote_repo:$remote_branch" && \
